@@ -1,52 +1,63 @@
-@import "variables";
-
 .button {
-    outline: none;
-    text-transform: uppercase;
-    padding: 23px 20px 23px 20px;
-    text-align: center;
-    font-family: inherit;
-    font-size: 13px;
-    line-height: 14px;
-    letter-spacing: 1.73px;
+    display: inline-block;
+    margin: 0;
+    padding: 20px 60px;
+
     cursor: pointer;
-    transition: all 200ms;
 
-    &_primary{
-        background-color: $colorPrimary;
-        color: $colorWhite;
+    outline: none;
+
+    font-family: inherit;
+    color: #20B3EF;
+    background-color: #ffffff;
+
+    text-align: center;
+
+    border: 1px solid #20b3ef;
+    border-radius: 8px;
+
+    transition: color, opacity, background-color 250ms;
+
+    &_is_primary {
+        background-color: #20b3ef;
+        border-color: #20b3ef;
+        color: #ffffff;
+        opacity: 1.0;
 
         &:hover {
-            background-color: $colorHover;
-        }
-
-        &:active,
-        &:focus {
-            background-color: $colorHover;
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
+            background-color: #20b3ef;
+            color: #ffffff;
+            opacity: 0.8;
         }
     }
 
-    &_outlined {
-        background-color: inherit;
-        color: $colorPrimary;
-        border: 2px solid $colorPrimary;
+    &__submit {
+        background-color: #303f55;
+        border: 1px solid #303f55;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #ffffff;
 
         &:hover {
-            background-color: $colorPrimary;
-            color: $colorWhite;
-        }
-
-        &:active,
-        &:focus {
-            background-color: $colorPrimary;
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
+            opacity: 0.8;
         }
     }
 
-    &_small {
-        padding: 15px 20px 15px 20px;
+    &__cool {
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after {
+            content: url('stylesheets/icons/cool.svg');
+            margin-left: 10px;
+        }
+    }
+
+    &:hover {
+        background-color: #20b3ef;
+        color: #ffffff;
     }
 }

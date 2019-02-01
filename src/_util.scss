@@ -1,0 +1,16 @@
+.center {
+    text-align: center;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .center-md {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .center-lg {
+        text-align: center;
+    }
+}

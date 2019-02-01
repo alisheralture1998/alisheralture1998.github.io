@@ -1,0 +1,12 @@
+.link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    color: #848faa;
+
+    &:hover {
+        color: #ffffff;
+    }
+}

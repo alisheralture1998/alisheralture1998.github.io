@@ -1,5 +1,3 @@
-@import "variables";
-
 .toggle {
 	display: block;
 	position: relative;
@@ -19,7 +17,7 @@
 
 		line-height: 20px;
 
-		background-color: $toggleColor;
+		background-color: #98A2BA;
 
 		transform: rotate(0deg);
 		opacity: 1;
@@ -53,4 +51,3 @@
 		}
 	}
 }
-

@@ -1,59 +1,106 @@
-@import "variables";
-
 .title {
-		&_bright {
-				color: $white;
-		}
+    display: block;
 
-		&_align-center {
-				text-align: center;
-		}
+    margin: 0;
+    padding: 0;
 
-		&_on-img {
-				line-height: 18px;
-				letter-spacing: 2px;
-				font-weight: 600;
-		}
+    font-family: inherit;
+    font-weight: 700;
+    color: #1a284b;
 
-		&_numbers {
-				font-weight: 700;
-				font-size: 48px;
-				line-height: 59px;
-				letter-spacing: 6.4px;
-				font-family: Montserrat;
-		}
+    text-transform: uppercase;
+
+    &_center {
+        text-align: center;
+    }
+
+    &_is_big {
+        font-size: 32px;
+        line-height: 32px;
+
+        & + .subtitle {
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+
+            color: #5d6780;
+        }
+    }
+
+    &_is_medium {
+        font-size: 30px;
+        line-height: 34px;
+
+        & + .subtitle {
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+
+            color: #5d6780;
+        }
+    }
+
+    &_is_small {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 17px;
+
+        text-transform: capitalize;
+
+        & + .subtitle {
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+
+            color: #848faa;
+        }
+    }
 }
 
-.subtitle {
-		&_bright {
-				color: $white;
-		}
-
-		&_on-img {
-				font-size: 15px;
-				line-height: 18px;
-				letter-spacing: 2px;
-				font-weight: 500;
-		}
-
-		&_align-center {
-				text-align: center;
-		}
-
-		&__progress-bar {
-				font-size: 13px;
-				line-height: 15px;
-				font-weight: 600;
-				letter-spacing: 1.73px;
-		}
-
-		&__article {
-				font-size: 20px;
-				line-height: 30px;
-				font-weight: 500;
-				color: $art_color;
-		}
+.paragraph {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #848faa;
 }
 
 
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .title {
+        &_is_big {
+            font-size: 52px;
+            line-height: 50px;
 
+            & + .subtitle {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+
+        &_is_medium {
+            font-size: 40px;
+            line-height: 46px;
+
+            & + .subtitle {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+
+        &_is_small {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 40px;
+
+            & + .subtitle {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+    }
+}

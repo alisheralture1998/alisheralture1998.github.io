@@ -8,15 +8,15 @@ sass.compiler = require('node-sass');
 gulp.task('scss', function () {
     return gulp.src([
         './src/all.scss',
-        './stylesheets/main.scss',
+        './main.scss',
     ])
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('./build/main.css'))
+        .pipe(concat('./main.css'))
         .pipe(gulp.dest('./'));
 });
 
 gulp.task('scss:watch', function () {
-    gulp.watch(['./src/*.scss', './stylesheets/main.scss'], [ 'scss'] );
+    gulp.watch(['./src/*.scss', './main.scss'], [ 'scss'] );
 });
 
 gulp.task('default', [ 'scss', 'scss:watch' ]);
