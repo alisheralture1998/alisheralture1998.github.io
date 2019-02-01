@@ -1588,6 +1588,12 @@ html {
       width: 100%;
       margin-bottom: 30px; }
   @media (min-width: 992px) {
+    .tarif {
+      padding-top: 140px;
+      padding-bottom: 146px; }
+    .tarif__col {
+      padding-left: 8px;
+      padding-right: 8px; }
     .tarif__title {
       margin-bottom: 50px; }
     .tarif__action {
@@ -1637,7 +1643,7 @@ html {
     font-size: 14px;
     font-weight: 500;
     line-height: 13px;
-    color: #0df3e1; }
+    color: #0da3e1; }
     .education__link:hover {
       opacity: 0.8; }
   @media (min-width: 992px) {

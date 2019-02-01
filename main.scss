@@ -374,6 +374,16 @@
     }
 
     @media (min-width: 992px){
+        & {
+            padding-top: 140px;
+            padding-bottom: 146px;
+        }
+
+        &__col {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
         &__title {
             margin-bottom: 50px;
         }
@@ -455,7 +465,7 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 13px;
-        color: #0df3e1;
+        color: #0da3e1;
 
         &:hover {
             opacity: 0.8;
