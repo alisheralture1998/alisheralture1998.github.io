@@ -1328,8 +1328,18 @@ html {
 .center {
   text-align: center; }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
+  .center-sm {
+    text-align: center; } }
+
+@media (min-width: 768px) {
   .center-md {
+    text-align: center; }
+  .m-auto {
+    margin: 0 auto; } }
+
+@media (min-width: 992px) {
+  .center-lg {
     text-align: center; } }
 
 @media (min-width: 1200px) {
@@ -1345,6 +1355,9 @@ html {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05); }
+  @media (min-width: 992px) {
+    .header {
+      box-shadow: none; } }
   .header__hero {
     position: relative;
     padding: 15px 0 0; }
@@ -1409,7 +1422,9 @@ html {
       width: 50%; }
     .action {
       padding-top: 170px;
-      padding-bottom: 171px; } }
+      padding-bottom: 171px; }
+    .action__subtitle {
+      margin-bottom: 92px; } }
 
 .feature {
   display: block;
@@ -1532,6 +1547,7 @@ html {
     width: 100%;
     padding: 20px 15px 92px;
     font-family: inherit;
+    font-weight: 500;
     font-size: 14px;
     line-height: 22px;
     background-color: #fff4c0;
@@ -1576,7 +1592,8 @@ html {
       margin-bottom: 50px; }
     .tarif__action {
       font-size: 18px;
-      line-height: 30px; }
+      line-height: 30px;
+      padding: 40px 0 100px; }
     .tarif__box {
       padding-left: 10px;
       padding-right: 10px; } }
@@ -1589,7 +1606,27 @@ html {
     margin-bottom: 40px; }
   .education__img {
     border-radius: 8px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    height: 128px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%; }
+    .education__img_1 {
+      background-image: url("stylesheets/images/ed-1.jpeg"); }
+    .education__img_2 {
+      background-image: url("stylesheets/images/ed-2.jpeg"); }
+    .education__img_3 {
+      background-image: url("stylesheets/images/ed-3.jpeg"); }
+  @media (min-width: 576px) {
+    .education__img {
+      height: 140px; } }
+  @media (min-width: 768px) {
+    .education__img {
+      height: 90px; } }
+  @media (min-width: 992px) {
+    .education_img {
+      height: 150px; } }
   .education__title_small {
     margin-bottom: 10px; }
   .education__subtitle_small {
@@ -1615,7 +1652,11 @@ html {
       margin: 0 auto;
       margin-bottom: 90px;
       text-align: center;
-      max-width: 623px; } }
+      max-width: 623px; }
+    .education__img {
+      border-radius: 8px;
+      margin-bottom: 20px;
+      height: 150px; } }
 
 .app {
   display: block;
