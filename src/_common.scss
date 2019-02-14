@@ -1,0 +1,453 @@
+.header {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+
+    @media (min-width: 992px) {
+        box-shadow: none;
+    }
+
+    &__hero {
+        position: relative;
+        padding: 15px 0 0;
+    }
+
+    @media (min-width: 992px) {
+        &__hero {
+            padding-bottom: 15px;
+        }
+    }
+
+    .nav {
+        display: block;
+        overflow: hidden;
+        transition: height .2s;
+        height: 0;
+
+        background-color: #1b2338;
+
+        &__item {
+            margin-bottom: 30px;
+        }
+
+        &_is_active {
+            height: 100vh;
+            padding: 50px 15px;
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            height: auto;
+
+            background-color: rgba(0,0,0,0);
+
+            &__item {
+                margin-bottom: 0;
+                margin-right: 40px;
+            }
+
+            &_is_active {
+                height: auto;
+                padding: 40px 0;
+            }
+
+            &__link {
+                font-weight: 500;
+                color: #98A2BA;
+                line-height: 40px;
+
+                &:hover {
+                    color: #5D6780;
+                }
+
+                &_active {
+                    color: #5D6780;
+                }
+            }
+        }
+    }
+
+    &__toggle {
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+
+    .no-p {
+        padding: 0;
+    }
+}
+
+.design-action {
+    display: block;
+    padding: 120px 0 160px;
+
+    background-image: url('stylesheets/images/box.png'), url('stylesheets/images/bg-design.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
+    background-position: center 370px, center;
+
+    @media (min-width: 576px) {
+        background-position: center 360px, center;
+        background-size: 70%, cover;
+    }
+
+    @media (min-width: 768px) {
+        background-image: url('stylesheets/images/box.png'), url('stylesheets/images/bg-design.png');
+        background-size: 60%, cover;
+        background-position: -5% 75%, center;
+        padding-bottom: 140px;
+    }
+
+    @media (min-width: 992px) {
+        background-size: 70%, cover;
+        background-position: -100px 130px, center;
+        padding-top: 180px;
+        padding-bottom: 110px;
+    }
+
+    @media (min-width: 1200px) {
+        background-size: 50%, cover;
+        background-position: 10px 120px, center;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 31px;
+        font-family: inherit;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-family: inherit;
+        font-size: 16px;
+        color: #fff;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        margin-bottom: 30px;
+
+        @media (min-width: 992px) {
+            margin: 0;
+        }
+    }
+}
+
+.education {
+    display: block;
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        margin-bottom: 40px;
+    }
+
+    &__col {
+        position: relative;
+        padding-bottom: 34px;
+        text-decoration: none;
+    }
+
+    &__img {
+        border-radius: 8px;
+        margin-bottom: 20px;
+        height: 128px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+
+        &_1 {
+            background-image: url('stylesheets/images/ed-1.jpeg');
+        }
+
+        &_2 {
+            background-image: url('stylesheets/images/ed-2.jpeg');
+        }
+
+        &_3 {
+            background-image: url('stylesheets/images/ed-3.jpeg');
+        }
+    }
+
+    &__time {
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 20px;
+        color: #0da3e1;
+    }
+
+    @media (min-width: 576px) {
+        &__img {
+            height: 140px;
+        }
+    }
+
+    @media (min-width: 768px){
+        &__img {
+            height: 90px;
+        }
+    }
+    @media (min-width: 992px){
+        &_img {
+            height: 150px;
+        }
+    }
+
+    &__title_small {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle_small {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 0;
+        text-decoration: none;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 13px;
+        color: #0da3e1;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    @media (min-width: 992px){
+        & {
+            padding-bottom: 50px;
+        }
+        &__title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        &__subtitle {
+            margin: 0 auto;
+            margin-bottom: 90px;
+            text-align: center;
+            max-width: 623px;
+        }
+
+        &__img {
+            border-radius: 8px;
+            margin-bottom: 20px;
+            height: 150px;
+        }
+    }
+
+    &_desing {
+        padding-top: 90px;
+        .education__img {
+            &_1 {
+                background-image: url('stylesheets/images/ed-2-1.jpeg');
+            }
+
+            &_2 {
+                background-image: url('stylesheets/images/ed-2-2.png');
+            }
+
+            &_3 {
+                background-image: url('stylesheets/images/ed-2-3.jpeg');
+            }
+        }
+    }
+}
+
+.education.education_hover {
+    .education__col {
+        cursor: default;
+        & * {
+            transition: all .2s;
+        }
+
+        &:hover * {
+            color: #0da3e1;
+        }
+
+        &:hover .education__img {
+            box-shadow: 0px 10px 20px rgba(59, 115, 140, 0.4);
+        }
+    }
+}
+
+.card {
+    display: block;
+    margin: 0;
+    padding: 245px 15px 40px;
+    background-color: #f0f9fd;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    background-size: 323px 237px;
+    border-radius: 8px;
+
+    &__title {
+        font-family: inherit;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #848faa;
+
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        display: inline-block;
+        margin: 0;
+        padding: 10px 20px;
+
+        cursor: pointer;
+
+        outline: none;
+
+        font-family: inherit;
+        font-size: 18px;
+        color: #5d6780;
+        background-color: #d1e8f2;
+
+        text-align: center;
+
+        border: 1px solid #d1e8f2;
+        border-radius: 8px;
+
+        transition: color, opacity, background-color 250ms;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    @media (min-width: 992px) {
+        padding: 400px 30px 40px;
+        background-size: contain;
+
+        &__title {
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 30px;
+        }
+
+        &__content {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+}
+
+.footer {
+    padding: 50px 0;
+    background-color: #1b2338;
+
+    &__logo {
+        margin-bottom: 40px;
+    }
+
+    &__nav {
+        margin-bottom: 50px;
+    }
+
+    &__link {
+        margin-bottom: 14px;
+    }
+
+    &__link:last-child {
+        margin: 0;
+    }
+
+    &__label {
+        margin-bottom: 14px;
+
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    &__input {
+        margin-bottom: 14px;
+        outline: none;
+        padding: 10px 20px;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #848faa;
+        background-color: #1b2338;
+        border: 1px solid #848faa;
+        border-radius: 8px;
+
+        &:focus {
+            border-color: #fff;
+        }
+    }
+
+    &__button {
+        margin-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__item {
+        margin-right: 10px;
+    }
+
+    &__item:last-child {
+        margin: 0;
+    }
+
+    @media (min-width: 768px) {
+        &__input {
+            margin: 0;
+            margin-right: 10px;
+        }
+
+        &__button {
+            margin: 0;
+        }
+
+        &__form {
+            margin-bottom: 50px;
+        }
+
+        &__label {
+            margin-right: 22px;
+        }
+    }
+
+    @media (min-width: 992px){
+        &__link {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+    }
+}

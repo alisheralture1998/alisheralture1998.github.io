@@ -8,6 +8,7 @@
     outline: none;
 
     font-family: inherit;
+    font-size: 18px;
     color: #20B3EF;
     background-color: #ffffff;
 
@@ -17,6 +18,12 @@
     border-radius: 8px;
 
     transition: color, opacity, background-color 250ms;
+
+    @media (min-width: 768px) {
+        & {
+            font-size: 22px;
+        }
+    }
 
     &_is_primary {
         background-color: #20b3ef;
@@ -31,12 +38,48 @@
         }
     }
 
+    &_is_secondary {
+        background-color: rgba(255,255,255,.2);
+        border-color: #ffffff;
+        font-weight: 500;
+        font-size: 18px;
+        color: #ffffff;
+        padding: 22px 30px;
+
+        &:hover {
+            background-color: rgba(255,255,255,.5) !important;
+        }
+
+        @media (min-width: 768px) {
+            & {
+                padding: 20px 60px;
+            }
+        }
+    }
+
+    &_text {
+        color: #ffffff;
+        padding: 0;
+        border: none;
+        background-color: rgba(0,0,0,0);
+        font-weight: 500;
+
+        &:hover {
+            background-color: rgba(0,0,0,0) !important;
+            text-decoration: underline;
+        }
+    }
+
     &__submit {
         background-color: #303f55;
         border: 1px solid #303f55;
         padding-top: 10px;
         padding-bottom: 10px;
         color: #ffffff;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: capitalize;
+        font-weight: 400;
 
         &:hover {
             opacity: 0.8;
