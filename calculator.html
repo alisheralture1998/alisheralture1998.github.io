@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Наши дизайны</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__hero d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+                    <a href="#" class="header__logo align-self-start">
+                        <img src="stylesheets/icons/logo.png" alt="" width="132">
+                    </a>
+                    <div class="header__toggle d-lg-none">
+                        <a class="toggle" aria-label="Open Navigation">
+                            <span class="toggle__child"></span>
+                            <span class="toggle__child"></span>
+                            <span class="toggle__child"></span>
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <ul class="nav__list d-flex flex-column flex-lg-row">
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link link">
+                                    Программы
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="design.html" class="nav__link nav__link_active link">
+                                    Наши дизайны
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link link">
+                                    Премиум курсы
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link link">
+                                    Партнерская программа
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="calc">
+            <div class="container">
+                <form class="range" action="index.html" method="post" oninput="rate.value=range.value">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title title_is_medium calc__title center-md">Калькулятор прибыли</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-1">
+                            <h3 class="title title_is_small calc__subtitle">Сколько аккаунтов используете?</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-1">
+                            <output name="rate">10</output>
+                        </div>
+                        <div class="col-12 col-md-9 offset-md-1 calc__range order-md-first">
+                            <input type="range" name="range" min="0" max="100" step="1" value="24" style="margin-bottom: 10px;">
+                            <ul class="range__progress">
+                                <li class="range__point">0</li>
+                                <li class="range__point">25</li>
+                                <li class="range__point">50</li>
+                                <li class="range__point">75</li>
+                                <li class="range__point">100</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-5 offset-md-1 calc__selects">
+                            <h3 class="title title_is_small calc__subtitle">Тип аккаунтов</h3>
+                            <div class="custom-select calc__select">
+                                <select>
+                                    <option value="0">Больше 50 друзей в аккаунте</option>
+                                    <option value="1">Lorem 2</option>
+                                    <option value="2">Lorem 3</option>
+                                    <option value="3">Lorem 4</option>
+                                    <option value="4">Lorem 5</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox__input" type="checkbox" name="terms" id="terms-label" required checked>
+                                <label class="checkbox__label" for="terms-label" >
+                                    Использовать прокси
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 calc__selects">
+                            <h3 class="title title_is_small calc__subtitle">Тип аккаунтов</h3>
+                            <div class="custom-select calc__select">
+                                <select>
+                                    <option value="0">24 часа</option>
+                                    <option value="1">24 часа</option>
+                                    <option value="2">Lorem 3</option>
+                                    <option value="3">Lorem 4</option>
+                                    <option value="4">Lorem 5</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox__input" type="checkbox" name="terms" id="terms-label-2" required>
+                                <label class="checkbox__label" for="terms-label-2" >
+                                    Время работы бота в день
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="app app_design cacl__subfooter">
+            <div class="container">
+                <div class="row calc__prices">
+                    <div class="col-12 col-md-5 offset-md-1">
+                        <p class="calc__price_title">Заработок в день</p>
+                        <h2 class="calc__price calc__prices__item">~3 231 руб.</h2>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <p class="calc__price_title">Заработок в день</p>
+                        <h2 class="calc__price">~96 940 руб</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 offset-md-1 d-lg-flex flex-lg-column">
+                        <button class="button button_is_primary calc_button">
+                            К списку программ
+                        </button>
+                        <p class="calc__subtext">Выберите программу и начните зарабатывать уже сегодня</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row d-flex flex-sm-row justify-content-sm-between">
+                    <div class="col-12 col-sm-auto">
+                        <img src="stylesheets/icons/logo-white.png" alt="" class="footer__logo" width="177">
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <nav class="d-flex flex-column flex-lg-row footer__nav">
+                            <a href="index.html" class="link footer__link">Программы</a>
+                            <a href="design.html" class="link link_active footer__link">Наши дизайны</a>
+                            <a href="#" class="link footer__link">Премиум курсы</a>
+                            <a href="#" class="link footer__link">Партнерская программа</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row d-flex flex-direction-md-row justify-content-md-between">
+                    <div class="col-12 col-md-auto">
+                        <p class="footer__label">Получайте свежие новости первыми</p>
+                        <form method="post" class="d-md-flex flex-md-row footer__form">
+                            <input type="email" name="email" class="d-block footer__input" placeholder="Ваша почта" required>
+                            <button type="submit" class="d-block button button__submit footer__button">Подписаться</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-auto d-md-flex">
+                        <p class="footer__label" style="color: #848FAA;">Подписывайтесь на нас:</p>
+                        <ul class="d-flex footer__social">
+                            <li class="footer__item">
+                                <a href="index.html">
+                                    <img src="stylesheets/icons/fb.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="design.html">
+                                    <img src="stylesheets/icons/tg.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    <img src="stylesheets/icons/vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">
+                                    <img src="stylesheets/icons/insta.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="toggle.js"></script>
+        <script src="select.js"></script>
+    </body>
+</html>

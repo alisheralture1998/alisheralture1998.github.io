@@ -66,6 +66,15 @@
     line-height: 20px;
     font-weight: 400;
     color: #848faa;
+
+    &_is_black {
+        color: #1A284B;
+    }
+
+    &__link {
+        color: #0DA3E1;
+        text-decoration: none;
+    }
 }
 
 
@@ -102,5 +111,10 @@
                 line-height: 25px;
             }
         }
+    }
+
+    .paragraph {
+        font-size: 16px;
+        line-height: 25px;
     }
 }

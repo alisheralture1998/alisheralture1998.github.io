@@ -1,0 +1,63 @@
+.custom-select {
+    position: relative;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 13px;
+    color: #5D6780;
+
+    & select {
+        display: none;
+    }
+}
+
+.select-selected {
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: #fff;
+
+    &::after {
+        position: absolute;
+        content: url(stylesheets/icons/arrow.svg);
+        top: 12px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        transition: all 300ms;
+    }
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: #fff;
+    top: 8px;
+    transform: rotateX(180deg);
+    transition: all .3s;
+}
+
+.select-items div,.select-selected {
+      color: #5D6780;
+      padding: 13px 20px;
+      margin-top: 5px;
+      background-color: #ffffff;
+      border: 1px solid #0DA3E1;
+      border-radius: 8px;
+      cursor: pointer;
+}
+
+.select-items {
+    position: absolute;
+    background-color: transparent;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    color: #fff;
+    background-color: #0DA3E1;
+}

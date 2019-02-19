@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Наши дизайны</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body style="padding: 200px;">
+        <div class="custom-select" style="width: 200px;">
+            <select>
+                <option value="0">Lorem 1</option>
+                <option value="1">Lorem 2</option>
+                <option value="2">Lorem 3</option>
+                <option value="3">Lorem 4</option>
+                <option value="4">Lorem 5</option>
+            </select>
+        </div>
+        <form class="range" action="index.html" method="post" oninput="rate.value=range.value">
+            <div class="row">
+                <div class="col-11">
+                    <input type="range" name="range" min="0" max="100" step="1" value="24">
+                    <ul class="range__progress">
+                        <li class="range__point">0</li>
+                        <li class="range__point">25</li>
+                        <li class="range__point">50</li>
+                        <li class="range__point">75</li>
+                        <li class="range__point">100</li>
+                    </ul>
+                </div>
+                <div class="col-1">
+                    <output name="rate">10</output>
+                </div>
+            </div>
+            <div class="row">
+                <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="terms" id="terms-label" required>
+                    <label class="checkbox__label" for="terms-label" >
+                        Alisher
+                    </label>
+                </div>
+            </div>
+        </form>
+    </body>
+    <script src="select.js"></script>
+</html>
